@@ -7,6 +7,8 @@ const socket = { hostname: "127.0.0.1", port: "5173" };
 const server = createServer(async (request, response) => {
   console.log(request.url);
   const pages = await listPages("pages");
+
+  //prevent user to visit page 404 by editing user in url explicitly
   const page =
     pages.pages[
       request.url === "/" || request.url === "/404" ? "/index" : request.url
