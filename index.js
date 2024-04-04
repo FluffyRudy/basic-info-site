@@ -1,5 +1,5 @@
 const { createServer } = require("http");
-const { listPages } = require("./fileHandler.cjs");
+const { listPages } = require("./fileHandler.js");
 const { readFile } = require("fs/promises");
 
 const socket = { hostname: "127.0.0.1", port: "5173" };
