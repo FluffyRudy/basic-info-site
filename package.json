@@ -1,7 +1,7 @@
 {
   "name": "basic-info-site",
   "version": "1.0.0",
-  "description": "The dangerous nodejs project to hack your computer",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,10 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/FluffyRudy/basic-info-site.git"
   },
-  "author": "FluffyRUdy",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/FluffyRudy/basic-info-site/issues"
   },
-  "homepage": "https://github.com/FluffyRudy/basic-info-site#readme"
+  "homepage": "https://github.com/FluffyRudy/basic-info-site#readme",
+  "devDependencies": {
+    "@types/node": "^22.7.4"
+  }
 }
