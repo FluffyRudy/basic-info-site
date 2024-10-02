@@ -1,0 +1,23 @@
+{
+  "name": "basic-info-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FluffyRudy/basic-info-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FluffyRudy/basic-info-site/issues"
+  },
+  "homepage": "https://github.com/FluffyRudy/basic-info-site#readme",
+  "devDependencies": {
+    "@types/node": "^22.7.4"
+  }
+}
