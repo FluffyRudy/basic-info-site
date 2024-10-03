@@ -19,5 +19,8 @@
   "homepage": "https://github.com/FluffyRudy/basic-info-site#readme",
   "devDependencies": {
     "@types/node": "^22.7.4"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
   }
 }
