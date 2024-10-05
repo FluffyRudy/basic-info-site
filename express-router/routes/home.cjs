@@ -4,6 +4,7 @@ const homeRoute = Router();
 
 homeRoute.get('/', (req, res) => {
     console.log(req.ip)
+    console.log(res.locals)
     res.send("Root path");
 });
 
