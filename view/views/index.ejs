@@ -1,0 +1,11 @@
+<head>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<%- include('navbar', { links }) %> 
+<h1>Home</h1>
+<ul>
+    <% users.forEach((user) => { %>
+        <%- include('users', { user }) %> 
+    <% }); %> 
+</ul>
+<%- include('footer') %> 

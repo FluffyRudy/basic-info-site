@@ -1,0 +1,17 @@
+<nav>
+    <h1>Navbar</h1>
+    <ul>
+        <% const currentPath = locals.currentPath %> 
+        <% for (let i = 0; i < links.length; i++) { %>
+            <% const link = links[i] %> 
+            <% if (link.href !== currentPath) { %>
+                <% console.log(link.href, currentPath) %> 
+                <li>
+                    <a href="<%= links[i].href %>">
+                        <span><%= links[i].text %></span>
+                    </a>
+                </li>
+            <% } %>
+        <% } %> 
+    </ul>
+</nav>

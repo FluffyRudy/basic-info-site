@@ -18,9 +18,11 @@
   },
   "homepage": "https://github.com/FluffyRudy/basic-info-site#readme",
   "devDependencies": {
+    "@types/express": "^5.0.0",
     "@types/node": "^22.7.4"
   },
   "dependencies": {
+    "ejs": "^3.1.10",
     "express": "^4.21.0",
     "express-async-handler": "^1.2.0"
   }
