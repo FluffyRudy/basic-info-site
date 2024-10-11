@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %> </title>
+</head>
+<body>
+    <h1><%= title %> </h1>
+    <%- include("partials/errors.ejs") %> 
+    <form action="/<%= id %>/update" method="post">
+        <label for="firstname"><input type="text" name="firstName" id="firstname" value="<%= firstName %>" onload="this.focus()"></label><br />
+        <button type="submit">Update</button>
+    </form>
+    <button><a href="/">Go to Home</a></button>
+</body>
+<script>
+    window.onload = () => {
+        document.getElementById("firstname").focus();
+    }
+</script>
+</html>

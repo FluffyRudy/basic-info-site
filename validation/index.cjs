@@ -1,9 +1,16 @@
-const { body, validationResult } = require("express-validator");
+const express = require("express");
+const { resolve } = require("path");
+const { userRouter } = require("./routes/userRouter.cjs");
 
-const birthdatete = body("birthdate", "Must be valid date")
-  .optional({
-    values: "falsy",
-  })
-  .isISO8601();
+const PORT = 3000;
 
-console.log(birthdatete);
+const app = express();
+app.set("views", resolve(__dirname, "views"));
+app.set("view engine", "ejs");
+app.use(express.urlencoded({ extended: true }));
+
+app.use("/", userRouter);
+
+app.listen(PORT, () => {
+  console.log(`Listening at: http://127.0.0.1:${PORT}`);
+});
